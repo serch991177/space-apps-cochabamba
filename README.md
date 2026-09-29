@@ -1,6 +1,6 @@
 # Space Apps Cochabamba 2026 — Angular
 
-Landing page en Angular 22 con una dirección visual futurista basada en los manuales de NASA Space Apps y Cocha/GAMC. Incluye portada con cuenta regresiva, información del evento, desafíos, agenda, paquetes opcionales, preguntas frecuentes y contacto. El registro y el panel de participantes requieren un backend posterior.
+Landing page en Angular 22 con una dirección visual futurista basada en los manuales de NASA Space Apps y Cocha/GAMC. Incluye portada con cuenta regresiva, coorganización del GAMC, desafíos municipales y globales, agenda, paquetes opcionales, preguntas frecuentes y contacto. El registro y el panel de participantes requieren un backend posterior.
 
 ## Ejecutar en Windows
 
@@ -19,4 +19,4 @@ npm run build
 
 La salida está en `dist/`. El contenido editable está en `src/app/app.ts` y `src/app/app.html`; el diseño está en `src/styles.css`. Los activos visuales están en `public/assets/`. La portada usa capas CSS, animación suave, telemetría visual y un globo transparente; se reduce el movimiento automáticamente si el sistema lo solicita.
 
-Los colores y tipografías proceden de los manuales suministrados. Los logos y las imágenes del evento se mantienen como activos separados para respetar sus proporciones originales.
+Los colores y tipografías proceden de los manuales suministrados. La marca institucional de Cocha/GAMC y el símbolo situado detrás del planeta se mantienen como archivos PNG separados en `public/assets/`, sin alterar sus proporciones.

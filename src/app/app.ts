@@ -106,6 +106,7 @@ export class App implements OnInit, OnDestroy {
     { question: '¿Necesito experiencia técnica?', answer: 'No. Personas de todas las disciplinas pueden aportar ideas, aprender y construir en equipo.' },
     { question: '¿Puedo participar sin equipo?', answer: 'Sí. Durante el evento podrás conocer a otras personas y formar un equipo con habilidades diferentes.' },
     { question: '¿Debo registrarme también en la plataforma de NASA?', answer: 'Sí. El registro local y el registro oficial de NASA son pasos diferentes. La organización local te orientará para seleccionar la sede Cochabamba y registrar a tu equipo.' },
+    { question: '¿Habrá desafíos municipales?', answer: 'Sí. En 2026 el GAMC coorganiza el evento en Cochabamba y también impulsa desafíos municipales. Consulta con la organización local los enunciados y detalles de participación.' },
     { question: '¿Cuándo y dónde será el evento?', answer: 'El 14 y 15 de noviembre de 2026, de forma presencial en FEXCO, Pabellón Kanata, Cochabamba.' },
   ];
 

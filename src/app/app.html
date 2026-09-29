@@ -10,7 +10,7 @@
       <a href="#que-es" (click)="closeMenu()">Qué es</a>
       <a href="#impacto" (click)="closeMenu()">Impacto local</a>
       <a href="#participar" (click)="closeMenu()">Participar</a>
-      <a href="#retos" (click)="closeMenu()">Desafíos</a>
+      <a href="#retos-municipales" (click)="closeMenu()">Desafíos</a>
       <a href="#agenda" (click)="closeMenu()">Agenda</a>
       <a href="#faq" (click)="closeMenu()">Preguntas</a>
     </nav>
@@ -50,6 +50,7 @@
       </div>
 
       <div class="hero-art" aria-label="Imagen de la Tierra vista desde el espacio">
+        <img class="cocha-watermark" src="/assets/cocha-2026-symbol.png" alt="" aria-hidden="true" width="2048" height="1834" />
         <div class="hud-ring hud-ring-outer" aria-hidden="true"></div>
         <div class="hud-ring hud-ring-inner" aria-hidden="true"></div>
         <div class="hud-sweep" aria-hidden="true"></div>
@@ -94,14 +95,15 @@
   <section id="aliados" class="co-brand-section">
     <div class="shell co-brand-layout">
       <div class="co-brand-copy">
-        <span class="eyebrow dark-eyebrow">UNA MISIÓN COMPARTIDA</span>
-        <h2>El futuro también<br />se construye <em>desde aquí.</em></h2>
-        <p>NASA Space Apps Cochabamba y el Gobierno Autónomo Municipal de Cochabamba conectan talento, conocimiento y ciudad.</p>
+        <span class="eyebrow dark-eyebrow">COORGANIZACIÓN LOCAL · 2026</span>
+        <h2>La ciudad también<br />construye <em>el futuro.</em></h2>
+        <p>Este año, el Gobierno Autónomo Municipal de Cochabamba (GAMC) es coorganizador del evento en la ciudad. Junto a NASA Space Apps Cochabamba, conecta talento, datos y nuevas ideas con los desafíos de nuestra comunidad.</p>
+        <a class="co-brand-link" href="#retos-municipales">Conoce los desafíos municipales <span aria-hidden="true">↗</span></a>
       </div>
-      <div class="brand-pair" aria-label="Marcas participantes">
+      <div class="brand-pair" aria-label="Marcas de la organización y coorganización">
         <div class="brand-tile nasa-tile"><img src="/assets/space-apps-cochabamba.png" alt="NASA Space Apps Cochabamba" width="240" height="99" /></div>
         <div class="brand-plus" aria-hidden="true">+</div>
-        <div class="brand-tile cocha-tile"><img src="/assets/cocha-logo.png" alt="Cocha, Gobierno Autónomo Municipal de Cochabamba" width="223" height="105" /></div>
+        <div class="brand-tile cocha-tile"><img src="/assets/cocha-gamc-2026.png" alt="Cocha y escudo del Gobierno Autónomo Municipal de Cochabamba" width="2048" height="1365" loading="lazy" decoding="async" /></div>
       </div>
     </div>
   </section>
@@ -185,11 +187,21 @@
 
   <section id="retos" class="section challenges-section">
     <div class="shell">
-      <div class="section-topline"><div class="section-kicker"><span class="number-pill">05</span> DESAFÍOS 2026</div><span class="topline-note">DATOS · CREATIVIDAD · IMPACTO</span></div>
+      <div class="section-topline"><div class="section-kicker"><span class="number-pill">05</span> DESAFÍOS 2026</div><span class="topline-note">LO LOCAL SE CONECTA CON LO GLOBAL</span></div>
       <div class="challenge-intro">
         <h2>Elige la pregunta.<br /><span>Construye la respuesta.</span></h2>
-        <p>Una selección de desafíos oficiales para explorar desde la ciencia, el diseño, la tecnología y la imaginación.</p>
+        <p>Explora los desafíos municipales de Cochabamba y una selección de retos globales de NASA Space Apps.</p>
       </div>
+      <div id="retos-municipales" class="municipal-panel">
+        <div class="municipal-panel-copy">
+          <div class="municipal-label"><span class="pulse-dot" aria-hidden="true"></span> DESAFÍOS MUNICIPALES · GAMC</div>
+          <h3>Ideas para la ciudad<br /><span>que habitamos.</span></h3>
+          <p>La edición 2026 también contará con desafíos municipales impulsados por el GAMC. Serán una oportunidad para observar necesidades de Cochabamba y proponer soluciones con datos, tecnología, diseño y colaboración.</p>
+          <a href="#contacto" class="municipal-link">Consulta los detalles con la organización <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="municipal-panel-art" aria-hidden="true"><span class="municipal-art-label">MISIÓN LOCAL / 2026</span><strong>COCHA<br /><em>+</em> IDEAS<br /><em>+</em> ACCIÓN</strong><span class="municipal-art-index">17°23′ S / 66°09′ W</span></div>
+      </div>
+      <div class="official-challenges-heading"><span>DESAFÍOS GLOBALES · NASA SPACE APPS</span><p>Una selección para explorar desde la ciencia, el diseño, la tecnología y la imaginación.</p></div>
       <div class="challenge-grid">
         @for (challenge of challenges; track challenge.number) {
           <article class="challenge-card">
@@ -274,7 +286,7 @@
 <footer class="site-footer">
   <div class="shell footer-main">
     <div class="footer-brand"><img src="/assets/space-apps-cochabamba.png" alt="NASA Space Apps Cochabamba" width="174" height="72" /><p>Ideas locales.<br />Impacto planetario.</p></div>
-    <div class="footer-links"><strong>EXPLORA</strong><a href="#que-es">Qué es Space Apps</a><a href="#participar">Cómo participar</a><a href="#retos">Desafíos</a><a href="#agenda">Agenda local</a></div>
+    <div class="footer-links"><strong>EXPLORA</strong><a href="#que-es">Qué es Space Apps</a><a href="#participar">Cómo participar</a><a href="#retos-municipales">Desafíos municipales</a><a href="#agenda">Agenda local</a></div>
     <div class="footer-links"><strong>ENCUÉNTRANOS</strong><a href="mailto:space.app.challenge.cochabamba@gmail.com">Correo local</a><a href="https://www.instagram.com/spaceappcochabamba/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.spaceappschallenge.org/" target="_blank" rel="noopener noreferrer">Plataforma oficial ↗</a></div>
     <div class="footer-location"><span>SEDE 2026</span><strong>COCHABAMBA<br />BOLIVIA</strong><small>14—15 NOV / FEXCO</small></div>
   </div>
