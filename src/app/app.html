@@ -5,7 +5,9 @@
     <a class="brand-link" href="#inicio" aria-label="Space Apps Cochabamba, volver al inicio" (click)="closeMenu()">
       <img src="/assets/space-apps-cochabamba.png" alt="NASA Space Apps Cochabamba" width="158" height="65" />
     </a>
-
+    <a class="brand-link" href="#inicio" aria-label="Space Apps Cochabamba, volver al inicio" (click)="closeMenu()">
+      <img src="/assets/cocha-gamc-2026.png" alt="NASA Space Apps Cochabamba" width="158" height="65" />
+    </a>
     <nav id="primary-navigation" class="main-nav" [class.is-open]="menuOpen()" aria-label="Navegación principal">
       <a href="#que-es" (click)="closeMenu()">Qué es</a>
       <a href="#impacto" (click)="closeMenu()">Impacto local</a>
@@ -185,23 +187,43 @@
     </div>
   </section>
 
-  <section id="retos" class="section challenges-section">
+  <section id="retos-municipales" class="section municipal-challenges-section">
     <div class="shell">
-      <div class="section-topline"><div class="section-kicker"><span class="number-pill">05</span> DESAFÍOS 2026</div><span class="topline-note">LO LOCAL SE CONECTA CON LO GLOBAL</span></div>
-      <div class="challenge-intro">
-        <h2>Elige la pregunta.<br /><span>Construye la respuesta.</span></h2>
-        <p>Explora los desafíos municipales de Cochabamba y una selección de retos globales de NASA Space Apps.</p>
+      <div class="section-topline"><div class="section-kicker on-dark"><span class="number-pill">05</span> DESAFÍOS MUNICIPALES</div><span class="topline-note">COCHABAMBA · GAMC · 2026</span></div>
+      <div class="municipal-section-intro">
+        <h2>La ciudad también<br /><span>nos desafía.</span></h2>
+        <p>El GAMC coorganiza el evento en Cochabamba e incorpora desafíos municipales. Estos temas genéricos muestran posibilidades para crear soluciones con impacto local.</p>
       </div>
-      <div id="retos-municipales" class="municipal-panel">
+      <div class="municipal-panel">
         <div class="municipal-panel-copy">
-          <div class="municipal-label"><span class="pulse-dot" aria-hidden="true"></span> DESAFÍOS MUNICIPALES · GAMC</div>
+          <div class="municipal-label"><span class="pulse-dot" aria-hidden="true"></span> MISIÓN LOCAL · GAMC</div>
           <h3>Ideas para la ciudad<br /><span>que habitamos.</span></h3>
-          <p>La edición 2026 también contará con desafíos municipales impulsados por el GAMC. Serán una oportunidad para observar necesidades de Cochabamba y proponer soluciones con datos, tecnología, diseño y colaboración.</p>
+          <p>Observa una necesidad cercana, conecta datos y perspectivas distintas, y construye una propuesta que pueda mejorar la vida en Cochabamba.</p>
           <a href="#contacto" class="municipal-link">Consulta los detalles con la organización <span aria-hidden="true">↗</span></a>
         </div>
         <div class="municipal-panel-art" aria-hidden="true"><span class="municipal-art-label">MISIÓN LOCAL / 2026</span><strong>COCHA<br /><em>+</em> IDEAS<br /><em>+</em> ACCIÓN</strong><span class="municipal-art-index">17°23′ S / 66°09′ W</span></div>
       </div>
-      <div class="official-challenges-heading"><span>DESAFÍOS GLOBALES · NASA SPACE APPS</span><p>Una selección para explorar desde la ciencia, el diseño, la tecnología y la imaginación.</p></div>
+      <div class="municipal-grid">
+        @for (challenge of municipalChallenges; track challenge.number) {
+          <article class="municipal-card">
+            <div class="municipal-card-top"><span>{{ challenge.category }}</span><span>{{ challenge.number }}</span></div>
+            <h3>{{ challenge.title }}</h3>
+            <p>{{ challenge.description }}</p>
+            <span class="municipal-card-bottom">TEMA ORIENTATIVO <span aria-hidden="true">✳</span></span>
+          </article>
+        }
+      </div>
+      <p class="municipal-disclaimer">Estos son ejemplos genéricos para inspirar ideas. Los enunciados, bases y criterios oficiales de los desafíos municipales serán comunicados por la organización.</p>
+    </div>
+  </section>
+
+  <section id="retos" class="section challenges-section">
+    <div class="shell">
+      <div class="section-topline"><div class="section-kicker"><span class="number-pill">06</span> DESAFÍOS GLOBALES · NASA</div><span class="topline-note">CIENCIA · DISEÑO · TECNOLOGÍA</span></div>
+      <div class="challenge-intro">
+        <h2>Elige la pregunta.<br /><span>Construye la respuesta.</span></h2>
+        <p>Explora una selección de desafíos oficiales de NASA Space Apps desde la ciencia, el diseño, la tecnología y la imaginación.</p>
+      </div>
       <div class="challenge-grid">
         @for (challenge of challenges; track challenge.number) {
           <article class="challenge-card">
@@ -218,7 +240,7 @@
 
   <section id="agenda" class="section agenda-section">
     <div class="shell">
-      <div class="section-kicker on-dark"><span class="number-pill">06</span> AGENDA LOCAL</div>
+      <div class="section-kicker on-dark"><span class="number-pill">07</span> AGENDA LOCAL</div>
       <div class="agenda-heading"><h2>Dos jornadas.<br /><span>Un universo de ideas.</span></h2><p>Del primer encuentro a la presentación final: conoce el recorrido de la misión en Cochabamba.</p></div>
       <div class="agenda-grid">
         @for (day of agenda; track day.date) {
@@ -236,7 +258,7 @@
 
   <section id="paquetes" class="section packages-section">
     <div class="shell">
-      <div class="section-topline"><div class="section-kicker"><span class="number-pill">07</span> EXPERIENCIA LOCAL</div><span class="topline-note">RECUERDOS OPCIONALES</span></div>
+      <div class="section-topline"><div class="section-kicker"><span class="number-pill">08</span> EXPERIENCIA LOCAL</div><span class="topline-note">RECUERDOS OPCIONALES</span></div>
       <div class="packages-heading"><h2>La misión es gratis.<br /><span>El recuerdo, a tu manera.</span></h2><div class="free-badge"><strong>Bs 0</strong><span>PARTICIPACIÓN<br />GRATUITA</span></div></div>
       <p class="packages-lead">Los paquetes de recuerdos son opcionales y no cambian tu acceso, tus oportunidades ni la evaluación de tu proyecto.</p>
       <div class="package-grid">
@@ -256,7 +278,7 @@
   <section id="faq" class="section faq-section">
     <div class="shell faq-layout">
       <div class="faq-copy">
-        <div class="section-kicker on-dark"><span class="number-pill">08</span> PREGUNTAS FRECUENTES</div>
+        <div class="section-kicker on-dark"><span class="number-pill">09</span> PREGUNTAS FRECUENTES</div>
         <h2>Lo esencial,<br /><span>sin dudas.</span></h2>
         <p>Respuestas para que puedas concentrarte en imaginar, aprender y crear.</p>
         <a class="text-link light-link" href="#contacto">¿Tienes otra pregunta? Escríbenos <span aria-hidden="true">↗</span></a>
@@ -275,7 +297,7 @@
   <section id="contacto" class="contact-section">
     <div class="shell contact-panel">
       <div class="contact-orbit" aria-hidden="true"></div>
-      <div class="section-kicker">09 / CONTACTO LOCAL</div>
+      <div class="section-kicker">10 / CONTACTO LOCAL</div>
       <h2>Una idea puede comenzar<br /><span>con una conversación.</span></h2>
       <p>Si tienes dudas sobre la experiencia en Cochabamba, habla con la organización local.</p>
       <a class="button button-neon" href="mailto:space.app.challenge.cochabamba@gmail.com?subject=Consulta%20Space%20Apps%20Cochabamba">Escribir a la organización <span aria-hidden="true">↗</span></a>

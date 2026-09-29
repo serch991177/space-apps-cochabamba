@@ -38,6 +38,39 @@ export class App implements OnInit, OnDestroy {
     { icon: '∞', title: 'Toda curiosidad', detail: 'Nuevas formas de mirar' },
   ];
 
+  readonly municipalChallenges = [
+    {
+      number: '01', category: 'MOVILIDAD URBANA',
+      title: 'Mover mejor Cochabamba',
+      description: 'Imagina herramientas para comprender los desplazamientos y hacer más simple moverse por la ciudad.',
+    },
+    {
+      number: '02', category: 'AGUA Y TERRITORIO',
+      title: 'Cuidar cada gota',
+      description: 'Explora cómo los datos y la información accesible pueden apoyar un uso responsable del agua.',
+    },
+    {
+      number: '03', category: 'AMBIENTE Y RESIDUOS',
+      title: 'Una ciudad más limpia',
+      description: 'Piensa en ideas que faciliten reducir, separar, recolectar o aprovechar mejor los residuos.',
+    },
+    {
+      number: '04', category: 'ESPACIO PÚBLICO',
+      title: 'Espacios para todas las personas',
+      description: 'Propón maneras de hacer más accesibles y activos los lugares que compartimos.',
+    },
+    {
+      number: '05', category: 'SERVICIOS CIUDADANOS',
+      title: 'Trámites más simples',
+      description: 'Diseña experiencias claras que acerquen información y servicios municipales a la gente.',
+    },
+    {
+      number: '06', category: 'PREVENCIÓN Y RESPUESTA',
+      title: 'Prepararnos mejor',
+      description: 'Conecta datos y comunidad para visualizar riesgos urbanos y mejorar la preparación local.',
+    },
+  ];
+
   readonly challenges: Challenge[] = [
     {
       number: '01', category: 'CIENCIA DE LA TIERRA', difficulty: 'AVANZADO',
@@ -106,7 +139,7 @@ export class App implements OnInit, OnDestroy {
     { question: '¿Necesito experiencia técnica?', answer: 'No. Personas de todas las disciplinas pueden aportar ideas, aprender y construir en equipo.' },
     { question: '¿Puedo participar sin equipo?', answer: 'Sí. Durante el evento podrás conocer a otras personas y formar un equipo con habilidades diferentes.' },
     { question: '¿Debo registrarme también en la plataforma de NASA?', answer: 'Sí. El registro local y el registro oficial de NASA son pasos diferentes. La organización local te orientará para seleccionar la sede Cochabamba y registrar a tu equipo.' },
-    { question: '¿Habrá desafíos municipales?', answer: 'Sí. En 2026 el GAMC coorganiza el evento en Cochabamba y también impulsa desafíos municipales. Consulta con la organización local los enunciados y detalles de participación.' },
+    { question: '¿Habrá desafíos municipales?', answer: 'Sí. En 2026 el GAMC coorganiza el evento en Cochabamba y también impulsa desafíos municipales. Los temas que aparecen en esta página son ejemplos orientativos; consulta con la organización los enunciados, bases y criterios oficiales.' },
     { question: '¿Cuándo y dónde será el evento?', answer: 'El 14 y 15 de noviembre de 2026, de forma presencial en FEXCO, Pabellón Kanata, Cochabamba.' },
   ];
 
